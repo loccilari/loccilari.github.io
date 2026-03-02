@@ -192,6 +192,23 @@
             .products-grid {
                 grid-template-columns: 1fr;
             }
+            
+        .product-card.indisponivel {
+  background-color: #e0e0e0; /* cinza claro */
+  color: #777;              /* texto apagado */
+  opacity: 0.7;             /* deixa o box "apagado" */
+  pointer-events: none;     /* opcional: desativa cliques */
+}
+
+.aviso {
+  display: inline-block;
+  background: #999;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
 
             .product-image-container {
                 height: 300px;
@@ -588,21 +605,23 @@
                 </div>
             </div>
 
-                        <!-- Kit acerola -->
-            <div class="product-card">
-                <div class="product-image-container">
-                    <img src="images/kitacerola.jpg" alt="Kit Acerola" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23FCE4EC%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23D81B60%22 font-family=%22Arial%22 font-size=%2224%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EKit Capim%3C/text%3E%3C/svg%3E'">
-                </div>
-                <div class="product-info">
-                    <h3 class="product-title">Kit Perfumação de Acerola</h3>
-                    <p class="product-description">Bodysplash + Sabonete Líquido Corporal Cremoso (grande) 200ml <br>Contém extrato de Acerola.</p>
-                    <div class="price-container">
-                        <span class="old-price">R$ 190,00</span>
-                        <span class="new-price">R$ 160,00</span>
-                        <span class="discount-badge">-15%</span>
-                    </div>
-                </div>
-            </div>
+<!-- Kit acerola -->
+<div class="product-card indisponivel">
+    <div class="product-image-container">
+        <img src="images/kitacerola.jpg" alt="Kit Acerola" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23FCE4EC%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23D81B60%22 font-family=%22Arial%22 font-size=%2224%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EKit Capim%3C/text%3E%3C/svg%3E'">
+    </div>
+    <div class="product-info">
+        <h3 class="product-title">Kit Perfumação de Acerola</h3>
+        <p class="product-description">Bodysplash + Sabonete Líquido Corporal Cremoso (grande) 200ml <br>Contém extrato de Acerola.</p>
+        <div class="price-container">
+            <span class="old-price">R$ 190,00</span>
+            <span class="new-price">R$ 160,00</span>
+            <span class="discount-badge">-15%</span>
+        </div>
+        <span class="aviso">Indisponível</span>
+    </div>
+</div>
+
 
                                     
 
